@@ -154,7 +154,7 @@ public class Main {
         size--;
       }
     }
-
+// Reverse LL
     public void reverseDI() {
       // write your code here
  
