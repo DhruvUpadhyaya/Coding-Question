@@ -1,0 +1,10 @@
+    public static String reverse(String s){
+        //Base cas
+        // When string is empty
+        if(s.equals("")){
+            return "";
+        }
+
+        return reverse(s.substring(1)) + s.charAt(0);
+
+    }
