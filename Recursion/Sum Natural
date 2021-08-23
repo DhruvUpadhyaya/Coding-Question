@@ -1,0 +1,9 @@
+    public static int sumNatural(int input){
+        //Base condition
+        if(input <= 1){
+            return 1;
+        }
+
+        return input+ sumNatural(input -1);
+
+    }
