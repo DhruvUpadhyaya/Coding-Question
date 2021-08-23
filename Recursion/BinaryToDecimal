@@ -1,0 +1,10 @@
+    public static String binaryToDecimal(int decimal, String result){
+        //Base case
+        if(decimal == 0){
+            return result;
+        }
+
+        result = decimal%2 + result;
+
+        return binaryToDecimal(decimal/2, result);
+    }
