@@ -1,0 +1,15 @@
+    public static int binarySearch(int[] arr, int left, int right, int input){
+        if(left > right){
+            return -1;
+        }
+        int mid = (left + right)/2;
+        if(input == arr[mid]){
+            return mid;
+        }
+
+        if(input< mid){
+            return binarySearch(arr, left, mid -1, input);
+        }
+
+        return binarySearch(arr, mid+1, right, input);
+    }
